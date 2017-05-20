@@ -1,15 +1,15 @@
 {
   "name": "threads_a_gogo",
-  "version": "0.1.7",
+  "version": "0.1.13",
   "main": "build/Release/threads_a_gogo.node",
-  "description": "████ Simple and fast JavaScript threads for Node.js ████",
+  "description": "██ Simple and fast JavaScript threads for Node.js ██",
   "keywords": [
-    "The",
-    "most",
-    "awesome",
-    "project",
+    "a gogo",
     "ever",
-    "a gogo"
+    "project",
+    "awesome",
+    "most",
+    "The"
   ],
   "author": {
     "name":   "Jorge Chamorro Bieling",
@@ -26,13 +26,12 @@
     "url": "http://github.com/xk/node-threads-a-gogo.git"
   },
   "scripts": {
-    "install": "node-gyp rebuild"
+    "install": "node-gyp -v rebuild",
+    "test": "node test/all.js"
   },
   "os": ["macos", "linux", "darwin"],
   "engines": {
-    "node": ">=0.5.1"
+    "node": ">=0.5.1 <=6.9.2"
   },
-  "dependencies": {
-  	"bindings":"*"
-  }
+  "devDependencies": { "test": ">=0.1.8" }
 }
